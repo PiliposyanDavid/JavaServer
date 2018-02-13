@@ -1,8 +1,14 @@
-<%-- Created by IntelliJ IDEA. --%>
+<%--
+  Created by IntelliJ IDEA.
+  User: davidpiliposyan
+  Date: 2/12/18
+  Time: 7:35 PM
+  To change this template use File | Settings | File Templates.
+--%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
-    <title>Login</title>
+    <title>Forgot Password</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -41,20 +47,15 @@
 <body>
 
 <div class="wrapper">
-    <h2>Login</h2><br>
+    <h2>Enter youre email</h2><br>
 
-    <form ACTION="/login" method="post">
+    <form ACTION="/forgot" method="post">
         <div class="form-group">
 
             <input type="text" placeholder="Email" required class="form-control" id="email" name="email">
         </div>
-        <div class="form-group">
-
-            <input type="password" placeholder="Password" required class="form-control" id="password" name="password">
-        </div>
-        <button type="submit" formmethod="post" class="button">Login</button>
-        <a href="/home">Back</a>  <a href="/forgot">Forgot Password</a>
-
+        <button type="submit" formmethod="post" class="button">Enter</button>
+        <a href="/home">Back</a>
     </form>
 </div>
 

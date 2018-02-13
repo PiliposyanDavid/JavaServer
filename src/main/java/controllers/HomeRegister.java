@@ -1,5 +1,6 @@
 package controllers;
 
+import send.mail.SendMail;
 import users.UpdateUser;
 import users.UserforJson;
 import utility.Settings;
@@ -111,8 +112,9 @@ public class HomeRegister extends HttpServlet {
             e.printStackTrace();
         }
 
-        user = UpdateUser.findUser(email, username, password);
 
+
+        user = UpdateUser.findUser(email, username, password);
         Cookie cookie = new Cookie("key", user.getKey());
         resp.addCookie(cookie);
         resp.sendRedirect("/user");
