@@ -28,6 +28,7 @@ public class HomeUser extends HttpServlet {
                 if (cookie.getName().equals("JSESSIONID")) continue;
                 cookeKey = cookie.getValue().toString();
             }
+
             if (cookeKey != null) {
 
                 UserforJson user = UpdateUser.findUserinKey(cookeKey);

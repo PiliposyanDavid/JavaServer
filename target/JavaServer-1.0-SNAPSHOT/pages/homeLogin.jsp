@@ -53,7 +53,8 @@
             <input type="password" placeholder="Password" required class="form-control" id="password" name="password">
         </div>
         <button type="submit" formmethod="post" class="button">Login</button>
-        <a href="/home">Back</a>
+        <a href="/home">Back</a>  <a href="/forgot">Forgot Password</a>
+
     </form>
 </div>
 
